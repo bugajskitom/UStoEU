@@ -154,12 +154,12 @@ print.UStoEU <- function(x, from, to, return = 'value', ...){
 #' @export
 summary.UStoEU <- function(object, ...){
   # Print structure of the argument x
-  str(x)
+  str(object)
   # Print the summary of result
-  summary(x$result)
+  summary(object$result)
   # Print the summary of unit
-  summary(x$unit)
+  summary(object$unit)
   # Print the execution time
   cat("\nExecution time:\n")
-  system.time(x)
+  system.time(object)
 }
